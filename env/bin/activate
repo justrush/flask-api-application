@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/justinrush/tech/cookiecutter-flask-skeleton/justin/env"
+VIRTUAL_ENV="/Users/justinrush/tech/justin/env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

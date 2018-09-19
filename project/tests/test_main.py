@@ -27,6 +27,10 @@ class TestMainBlueprint(BaseTestCase):
         self.assert404(response)
         self.assertTemplateUsed('errors/404.html')
 
+    def test_volume_on_homepage(self):
+        response = self.client.get('/', follow_redirects=True)
+        self.assertIn(b'volume', response.data)
+
 
 if __name__ == '__main__':
     unittest.main()

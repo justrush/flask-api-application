@@ -112,6 +112,5 @@ class TestUserBlueprint(BaseTestCase):
             self.assertTrue(current_user.is_active())
             self.assertEqual(response.status_code, 200)
 
-
 if __name__ == '__main__':
     unittest.main()
