@@ -1,5 +1,5 @@
 import requests
 
-def TIME_SERIES_DAILY():
+def get_time_series():
     req = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&apikey=demo')
     return req.json()

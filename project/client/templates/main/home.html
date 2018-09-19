@@ -14,5 +14,17 @@
 
 </div>
 
+<div>
+  <h1></h1>
+  <h2>Current Bit Stamp Here</h2>
+  <hr><br>
+  <p>test </p>
+  <ul>{% for item in time_series %}</ul>
+
+    <li><strong>{{ item }}:</strong>={{ time_series[item] }}</li>
+
+  {% endfor %}
+
+</div>
 
 {% endblock %}
